@@ -14,5 +14,8 @@
   },
   "bugs": {
     "url": "https://github.com/pyramation/protobufs/issues"
+  },
+  "dependencies": {
+    "@protobufs/google": "^0.0.2"
   }
 }
