@@ -1,0 +1,19 @@
+{
+  "name": "@protobufs/tendermint",
+  "version": "0.0.1",
+  "description": "tendermint",
+  "author": "Dan Lynch <pyramation@gmail.com>",
+  "homepage": "https://github.com/pyramation/protobufs/tree/master/packages/tendermint#readme",
+  "license": "SEE LICENSE IN LICENSE",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pyramation/protobufs"
+  },
+  "bugs": {
+    "url": "https://github.com/pyramation/protobufs/issues"
+  },
+  "dependencies": {}
+}

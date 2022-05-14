@@ -1,0 +1,19 @@
+{
+  "name": "@protobufs/cosmos_proto",
+  "version": "0.0.1",
+  "description": "cosmos_proto",
+  "author": "Dan Lynch <pyramation@gmail.com>",
+  "homepage": "https://github.com/pyramation/protobufs/tree/master/packages/cosmos_proto#readme",
+  "license": "SEE LICENSE IN LICENSE",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pyramation/protobufs"
+  },
+  "bugs": {
+    "url": "https://github.com/pyramation/protobufs/issues"
+  },
+  "dependencies": {}
+}
