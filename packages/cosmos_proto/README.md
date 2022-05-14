@@ -1,1 +1,1 @@
-# confio
+# cosmos_proto

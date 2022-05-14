@@ -1,1 +1,1 @@
-# confio
+# gogoproto
