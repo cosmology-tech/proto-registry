@@ -1,6 +1,6 @@
 {
   "name": "@protobufs/osmosis",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "osmosis",
   "author": "Dan Lynch <pyramation@gmail.com>",
   "homepage": "https://github.com/pyramation/protobufs/tree/master/packages/osmosis#readme",
@@ -16,8 +16,8 @@
     "url": "https://github.com/pyramation/protobufs/issues"
   },
   "dependencies": {
-    "@protobufs/cosmos": "^0.0.4",
-    "@protobufs/gogoproto": "^0.0.4",
-    "@protobufs/google": "^0.0.4"
+    "@protobufs/cosmos": "^0.0.5",
+    "@protobufs/gogoproto": "^0.0.5",
+    "@protobufs/google": "^0.0.5"
   }
 }
