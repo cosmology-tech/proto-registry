@@ -1,6 +1,6 @@
 {
   "name": "@protobufs/cosmos",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "cosmos",
   "author": "Dan Lynch <pyramation@gmail.com>",
   "homepage": "https://github.com/pyramation/protobufs/tree/master/packages/cosmos#readme",
@@ -16,9 +16,9 @@
     "url": "https://github.com/pyramation/protobufs/issues"
   },
   "dependencies": {
-    "@protobufs/cosmos_proto": "^0.0.3",
-    "@protobufs/gogoproto": "^0.0.3",
-    "@protobufs/google": "^0.0.3",
-    "@protobufs/tendermint": "^0.0.3"
+    "@protobufs/cosmos_proto": "^0.0.4",
+    "@protobufs/gogoproto": "^0.0.4",
+    "@protobufs/google": "^0.0.4",
+    "@protobufs/tendermint": "^0.0.4"
   }
 }

@@ -1,6 +1,6 @@
 {
   "name": "@protobufs/google",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "google",
   "author": "Dan Lynch <pyramation@gmail.com>",
   "homepage": "https://github.com/pyramation/protobufs/tree/master/packages/google#readme",

@@ -1,6 +1,6 @@
 {
   "name": "@protobufs/ibc",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "ibc",
   "author": "Dan Lynch <pyramation@gmail.com>",
   "homepage": "https://github.com/pyramation/protobufs/tree/master/packages/ibc#readme",
@@ -17,9 +17,9 @@
   },
   "dependencies": {
     "@protobufs/confio": "^0.0.2",
-    "@protobufs/cosmos": "^0.0.3",
-    "@protobufs/gogoproto": "^0.0.3",
-    "@protobufs/google": "^0.0.3",
-    "@protobufs/tendermint": "^0.0.3"
+    "@protobufs/cosmos": "^0.0.4",
+    "@protobufs/gogoproto": "^0.0.4",
+    "@protobufs/google": "^0.0.4",
+    "@protobufs/tendermint": "^0.0.4"
   }
 }
