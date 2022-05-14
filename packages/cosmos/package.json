@@ -1,6 +1,6 @@
 {
   "name": "@protobufs/cosmos",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "cosmos",
   "author": "Dan Lynch <pyramation@gmail.com>",
   "homepage": "https://github.com/pyramation/protobufs/tree/master/packages/cosmos#readme",
@@ -14,6 +14,5 @@
   },
   "bugs": {
     "url": "https://github.com/pyramation/protobufs/issues"
-  },
-  "dependencies": {}
+  }
 }
