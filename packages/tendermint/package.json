@@ -1,6 +1,6 @@
 {
   "name": "@protobufs/tendermint",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "tendermint",
   "author": "Dan Lynch <pyramation@gmail.com>",
   "homepage": "https://github.com/pyramation/protobufs/tree/master/packages/tendermint#readme",
@@ -16,7 +16,7 @@
     "url": "https://github.com/pyramation/protobufs/issues"
   },
   "dependencies": {
-    "@protobufs/gogoproto": "^0.0.6",
-    "@protobufs/google": "^0.0.6"
+    "@protobufs/gogoproto": "^0.0.7",
+    "@protobufs/google": "^0.0.7"
   }
 }

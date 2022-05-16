@@ -1,6 +1,6 @@
 {
   "name": "@protobufs/gogoproto",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "gogoproto",
   "author": "Dan Lynch <pyramation@gmail.com>",
   "homepage": "https://github.com/pyramation/protobufs/tree/master/packages/gogoproto#readme",
@@ -16,6 +16,6 @@
     "url": "https://github.com/pyramation/protobufs/issues"
   },
   "dependencies": {
-    "@protobufs/google": "^0.0.6"
+    "@protobufs/google": "^0.0.7"
   }
 }
