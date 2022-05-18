@@ -1,6 +1,6 @@
 {
   "name": "@protobufs/stargaze",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "stargaze",
   "author": "Dan Lynch <pyramation@gmail.com>",
   "homepage": "https://github.com/pyramation/protobufs/tree/master/packages/stargaze#readme",

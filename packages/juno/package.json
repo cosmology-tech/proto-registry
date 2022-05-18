@@ -1,6 +1,6 @@
 {
   "name": "@protobufs/juno",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "juno",
   "author": "Dan Lynch <pyramation@gmail.com>",
   "homepage": "https://github.com/pyramation/protobufs/tree/master/packages/juno#readme",
