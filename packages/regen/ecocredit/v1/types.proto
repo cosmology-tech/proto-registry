@@ -1,0 +1,58 @@
+syntax = "proto3";
+
+package regen.ecocredit.v1;
+
+import "gogoproto/gogo.proto";
+import "cosmos/base/v1beta1/coin.proto";
+import "regen/ecocredit/v1/state.proto";
+
+option go_package = "github.com/regen-network/regen-ledger/x/ecocredit/core";
+
+// Params defines the updatable global parameters of the ecocredit module for
+// use with the x/params module.
+message Params {
+  // credit_class_fee is the fixed fee charged on creation of a new credit class
+  repeated cosmos.base.v1beta1.Coin credit_class_fee = 1 [
+    (gogoproto.nullable) = false,
+    (gogoproto.castrepeated) = "github.com/cosmos/cosmos-sdk/types.Coins"
+  ];
+
+  // basket_fee is the fixed fee charged on creation of a new basket
+  repeated cosmos.base.v1beta1.Coin basket_fee = 2 [
+    (gogoproto.nullable) = false,
+    (gogoproto.castrepeated) = "github.com/cosmos/cosmos-sdk/types.Coins"
+  ];
+
+  // allowed_class_creators is an allowlist defining the addresses with
+  // the required permissions to create credit classes
+  repeated string allowed_class_creators = 3;
+
+  // allowlist_enabled is a param that enables/disables the allowlist for credit
+  // creation
+  bool allowlist_enabled = 4;
+}
+
+// OriginTx is a reference to an external transaction or an operation
+// related to an action on Regen Ledger.
+message OriginTx {
+  // type of the transaction originating the mint process. Eg: Polygon,
+  // Ethereum, Verra...
+  string typ = 1;
+  // the id of a transaction based on a type (tx id, serial number)
+  string id = 2;
+}
+
+// CreditTypeProposal is a gov Content type for adding a credit type.
+message CreditTypeProposal {
+  option (gogoproto.goproto_stringer) = false;
+
+  // title is the title of the proposal.
+  string title = 1;
+
+  // description is the description of the proposal.
+  string description = 2;
+
+  // credit_type is the credit type to be added to the network if the proposal
+  // passes.
+  CreditType credit_type = 3;
+}
