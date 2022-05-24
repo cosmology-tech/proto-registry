@@ -3,7 +3,7 @@ syntax = "proto3";
 package regen.ecocredit.orderbook.v1alpha1;
 
 import "google/protobuf/timestamp.proto";
-import "cosmos/orm/v1alpha1/orm.proto";
+import "cosmos/orm/v1/orm.proto";
 
 option go_package = "github.com/regen-network/regen-ledger/x/ecocredit/orderbook";
 
@@ -28,19 +28,10 @@ message BuyOrderSellOrderMatch {
     // bids and lowest asks get filled first. If the ask price is the same, then
     // earlier sell orders get filled first (again we get this from the sell
     // order ID which is assigned incrementally).
-    index : {id : 1;
-fields:
-  "market_id,bid_price_complement,buy_order_id,ask_price,sell_order_id";
-  // name: "order_book_match"
-}
-
-// this index is used to delete matches once sell orders are filled
-index : {
-id:
-  2, fields : "sell_order_id"
-}
-}
-;
+    index : {id : 1}
+    fields: "market_id,bid_price_complement,buy_order_id,ask_price,sell_order_id"
+  };
+    // this index is used to delete matches once sell orders are filled
 
 // market_id defines the market within which this match exists.
 uint64 market_id = 1;

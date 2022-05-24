@@ -3,7 +3,7 @@ syntax = "proto3";
 // Revision 1
 package regen.ecocredit.basket.v1;
 
-import "cosmos/orm/v1alpha1/orm.proto";
+import "cosmos/orm/v1/orm.proto";
 import "google/protobuf/timestamp.proto";
 import "regen/ecocredit/basket/v1/types.proto";
 
