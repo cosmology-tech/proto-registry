@@ -1,6 +1,6 @@
 {
   "name": "@protobufs/bcna",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "description": "bcna",
   "author": "Dan Lynch <pyramation@gmail.com>",
   "homepage": "https://github.com/pyramation/protobufs/tree/master/packages/bcna#readme",
