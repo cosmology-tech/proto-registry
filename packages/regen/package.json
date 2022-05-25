@@ -1,6 +1,6 @@
 {
   "name": "@protobufs/regen",
-  "version": "0.0.11",
+  "version": "0.0.12",
   "description": "regen",
   "author": "Dan Lynch <pyramation@gmail.com>",
   "homepage": "https://github.com/pyramation/protobufs/tree/master/packages/regen#readme",
@@ -16,8 +16,8 @@
     "url": "https://github.com/pyramation/protobufs/issues"
   },
   "dependencies": {
-    "@protobufs/cosmos": "^0.0.7",
-    "@protobufs/gogoproto": "^0.0.7",
-    "@protobufs/google": "^0.0.7"
+    "@protobufs/cosmos": "^0.0.8",
+    "@protobufs/gogoproto": "^0.0.8",
+    "@protobufs/google": "^0.0.8"
   }
 }
