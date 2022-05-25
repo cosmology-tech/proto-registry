@@ -1,0 +1,24 @@
+{
+  "name": "@protobufs/pylons",
+  "version": "0.0.8",
+  "description": "pylons",
+  "author": "Dan Lynch <pyramation@gmail.com>",
+  "homepage": "https://github.com/pyramation/protobufs/tree/master/packages/pylons#readme",
+  "license": "SEE LICENSE IN LICENSE",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pyramation/protobufs"
+  },
+  "bugs": {
+    "url": "https://github.com/pyramation/protobufs/issues"
+  },
+  "dependencies": {
+    "@protobufs/cosmos": "^0.0.8",
+    "@protobufs/gogoproto": "^0.0.8",
+    "@protobufs/tendermint": "^0.0.8",
+    "@protobufs/google": "^0.0.8"
+  }
+}
