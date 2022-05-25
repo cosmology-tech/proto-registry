@@ -4,7 +4,7 @@ package Pylonstech.pylons.epochs;
 import "gogoproto/gogo.proto";
 import "google/api/annotations.proto";
 import "cosmos/base/query/v1beta1/pagination.proto";
-import "epochs/genesis.proto";
+import "pylons/epochs/genesis.proto";
 // this line is used by starport scaffolding # 1
 
 option go_package = "github.com/Pylons-tech/pylons/x/epochs/types";
