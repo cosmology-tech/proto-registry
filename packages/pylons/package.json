@@ -1,6 +1,6 @@
 {
   "name": "@protobufs/pylons",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "description": "pylons",
   "author": "Dan Lynch <pyramation@gmail.com>",
   "homepage": "https://github.com/pyramation/protobufs/tree/master/packages/pylons#readme",
