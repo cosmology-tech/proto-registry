@@ -1,6 +1,6 @@
 {
   "name": "@protobufs/comdex",
-  "version": "0.0.11",
+  "version": "0.0.12",
   "description": "comdex",
   "author": "Dan Lynch <pyramation@gmail.com>",
   "homepage": "https://github.com/cosmology-finance/proto-registry/tree/master/packages/comdex#readme",
