@@ -1,6 +1,6 @@
 {
   "name": "@protobufs/gogoproto",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "gogoproto",
   "author": "Dan Lynch <pyramation@gmail.com>",
   "homepage": "https://github.com/cosmology-finance/proto-registry/tree/master/packages/gogoproto#readme",
@@ -16,6 +16,6 @@
     "url": "https://github.com/cosmology-finance/proto-registry/issues"
   },
   "dependencies": {
-    "@protobufs/google": "^0.0.8"
+    "@protobufs/google": "^0.0.9"
   }
 }

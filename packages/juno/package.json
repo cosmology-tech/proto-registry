@@ -1,6 +1,6 @@
 {
   "name": "@protobufs/juno",
-  "version": "0.0.10",
+  "version": "0.0.11",
   "description": "juno",
   "author": "Dan Lynch <pyramation@gmail.com>",
   "homepage": "https://github.com/cosmology-finance/proto-registry/tree/master/packages/juno#readme",
@@ -16,8 +16,8 @@
     "url": "https://github.com/cosmology-finance/proto-registry/issues"
   },
   "dependencies": {
-    "@protobufs/cosmos": "^0.0.8",
-    "@protobufs/gogoproto": "^0.0.8",
-    "@protobufs/google": "^0.0.8"
+    "@protobufs/cosmos": "^0.0.9",
+    "@protobufs/gogoproto": "^0.0.9",
+    "@protobufs/google": "^0.0.9"
   }
 }

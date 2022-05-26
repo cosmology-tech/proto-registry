@@ -1,6 +1,6 @@
 {
   "name": "@protobufs/google",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "google",
   "author": "Dan Lynch <pyramation@gmail.com>",
   "homepage": "https://github.com/cosmology-finance/proto-registry/tree/master/packages/google#readme",

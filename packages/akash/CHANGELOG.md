@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.0.6](https://github.com/cosmology-finance/proto-registry/compare/@protobufs/akash@0.0.5...@protobufs/akash@0.0.6) (2022-05-26)
+
+**Note:** Version bump only for package @protobufs/akash
+
+
+
+
+
 ## [0.0.5](https://github.com/cosmology-finance/proto-registry/compare/@protobufs/akash@0.0.4...@protobufs/akash@0.0.5) (2022-05-25)
 
 **Note:** Version bump only for package @protobufs/akash
