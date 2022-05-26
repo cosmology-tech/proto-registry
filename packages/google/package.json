@@ -3,16 +3,16 @@
   "version": "0.0.8",
   "description": "google",
   "author": "Dan Lynch <pyramation@gmail.com>",
-  "homepage": "https://github.com/pyramation/protobufs/tree/master/packages/google#readme",
+  "homepage": "https://github.com/cosmology-finance/proto-registry/tree/master/packages/google#readme",
   "license": "SEE LICENSE IN LICENSE",
   "publishConfig": {
     "access": "public"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/pyramation/protobufs"
+    "url": "https://github.com/cosmology-finance/proto-registry"
   },
   "bugs": {
-    "url": "https://github.com/pyramation/protobufs/issues"
+    "url": "https://github.com/cosmology-finance/proto-registry/issues"
   }
 }

@@ -3,17 +3,17 @@
   "version": "0.0.5",
   "description": "akash",
   "author": "Dan Lynch <pyramation@gmail.com>",
-  "homepage": "https://github.com/pyramation/protobufs/tree/master/packages/akash#readme",
+  "homepage": "https://github.com/cosmology-finance/proto-registry/tree/master/packages/akash#readme",
   "license": "SEE LICENSE IN LICENSE",
   "publishConfig": {
     "access": "public"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/pyramation/protobufs"
+    "url": "https://github.com/cosmology-finance/proto-registry"
   },
   "bugs": {
-    "url": "https://github.com/pyramation/protobufs/issues"
+    "url": "https://github.com/cosmology-finance/proto-registry/issues"
   },
   "dependencies": {
     "@protobufs/cosmos": "^0.0.8",
