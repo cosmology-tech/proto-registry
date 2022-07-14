@@ -1,6 +1,6 @@
 {
   "name": "@protobufs/akash",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "akash",
   "author": "Dan Lynch <pyramation@gmail.com>",
   "homepage": "https://github.com/cosmology-tech/proto-registry/tree/master/packages/akash#readme",
@@ -16,8 +16,8 @@
     "url": "https://github.com/cosmology-tech/proto-registry/issues"
   },
   "dependencies": {
-    "@protobufs/cosmos": "^0.0.9",
-    "@protobufs/gogoproto": "^0.0.9",
-    "@protobufs/google": "^0.0.9"
+    "@protobufs/cosmos": "^0.0.10",
+    "@protobufs/gogoproto": "^0.0.10",
+    "@protobufs/google": "^0.0.10"
   }
 }

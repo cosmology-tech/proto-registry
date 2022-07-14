@@ -1,6 +1,6 @@
 {
   "name": "@protobufs/cosmwasm",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "description": "cosmwasm",
   "author": "Dan Lynch <pyramation@gmail.com>",
   "homepage": "https://github.com/cosmology-tech/proto-registry/tree/master/packages/cosmwasm#readme",
@@ -16,9 +16,9 @@
     "url": "https://github.com/cosmology-tech/proto-registry/issues"
   },
   "dependencies": {
-    "@protobufs/cosmos": "^0.0.9",
-    "@protobufs/cosmos_proto": "^0.0.9",
-    "@protobufs/gogoproto": "^0.0.9",
-    "@protobufs/google": "^0.0.9"
+    "@protobufs/cosmos": "^0.0.10",
+    "@protobufs/cosmos_proto": "^0.0.10",
+    "@protobufs/gogoproto": "^0.0.10",
+    "@protobufs/google": "^0.0.10"
   }
 }

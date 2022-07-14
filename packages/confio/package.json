@@ -1,6 +1,6 @@
 {
   "name": "@protobufs/confio",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "confio",
   "author": "Dan Lynch <pyramation@gmail.com>",
   "homepage": "https://github.com/cosmology-tech/proto-registry/tree/master/packages/confio#readme",

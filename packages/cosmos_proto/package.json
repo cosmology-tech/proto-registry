@@ -1,6 +1,6 @@
 {
   "name": "@protobufs/cosmos_proto",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "description": "cosmos_proto",
   "author": "Dan Lynch <pyramation@gmail.com>",
   "homepage": "https://github.com/cosmology-tech/proto-registry/tree/master/packages/cosmos_proto#readme",
@@ -16,6 +16,6 @@
     "url": "https://github.com/cosmology-tech/proto-registry/issues"
   },
   "dependencies": {
-    "@protobufs/google": "^0.0.9"
+    "@protobufs/google": "^0.0.10"
   }
 }
