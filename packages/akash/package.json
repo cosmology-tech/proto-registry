@@ -3,17 +3,17 @@
   "version": "0.0.6",
   "description": "akash",
   "author": "Dan Lynch <pyramation@gmail.com>",
-  "homepage": "https://github.com/cosmology-finance/proto-registry/tree/master/packages/akash#readme",
+  "homepage": "https://github.com/cosmology-tech/proto-registry/tree/master/packages/akash#readme",
   "license": "SEE LICENSE IN LICENSE",
   "publishConfig": {
     "access": "public"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/cosmology-finance/proto-registry"
+    "url": "https://github.com/cosmology-tech/proto-registry"
   },
   "bugs": {
-    "url": "https://github.com/cosmology-finance/proto-registry/issues"
+    "url": "https://github.com/cosmology-tech/proto-registry/issues"
   },
   "dependencies": {
     "@protobufs/cosmos": "^0.0.9",
