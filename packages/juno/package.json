@@ -1,6 +1,6 @@
 {
   "name": "@protobufs/juno",
-  "version": "0.0.12",
+  "version": "0.0.13",
   "description": "juno",
   "author": "Dan Lynch <pyramation@gmail.com>",
   "homepage": "https://github.com/cosmology-tech/proto-registry/tree/master/packages/juno#readme",
