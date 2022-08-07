@@ -1,6 +1,6 @@
 {
   "name": "@protobufs/cosmos",
-  "version": "0.0.10",
+  "version": "0.0.11",
   "description": "cosmos",
   "author": "Dan Lynch <pyramation@gmail.com>",
   "homepage": "https://github.com/cosmology-tech/proto-registry/tree/master/packages/cosmos#readme",

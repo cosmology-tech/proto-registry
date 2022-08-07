@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.0.15](https://github.com/cosmology-tech/proto-registry/compare/@protobufs/regen@0.0.14...@protobufs/regen@0.0.15) (2022-08-07)
+
+**Note:** Version bump only for package @protobufs/regen
+
+
+
+
+
 ## [0.0.14](https://github.com/cosmology-tech/proto-registry/compare/@protobufs/regen@0.0.13...@protobufs/regen@0.0.14) (2022-07-14)
 
 **Note:** Version bump only for package @protobufs/regen
