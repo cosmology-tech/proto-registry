@@ -1,0 +1,28 @@
+syntax = "proto3";
+
+package regen.ecocredit.marketplace.v1;
+
+option go_package = "github.com/regen-network/regen-ledger/x/ecocredit/marketplace";
+
+// EventSell is an event emitted when a sell order is created.
+message EventSell {
+
+  // order_id is the unique identifier of the sell order.
+  uint64 order_id = 1;
+}
+
+// EventUpdateSellOrder is an event emitted when a sell order is updated.
+message EventUpdateSellOrder {
+
+  //  order_id is the unique identifier of the sell order.
+  uint64 order_id = 1;
+}
+
+// EventAllowDenom is an event emitted when a new denom is added for use in the
+// marketplace.
+message EventAllowDenom {
+
+  // denom is the bank denom (e.g. ibc/GLKHDSG423SGS) added to the list of
+  // allowed denoms for use in the marketplace.
+  string denom = 1;
+}
