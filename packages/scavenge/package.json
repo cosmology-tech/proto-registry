@@ -1,6 +1,6 @@
 {
   "name": "@protobufs/scavenge",
-  "version": "0.0.15",
+  "version": "0.1.0",
   "description": "scavenge",
   "author": "Dan Lynch <pyramation@gmail.com>",
   "homepage": "https://github.com/cosmology-tech/proto-registry/tree/master/packages/scavenge#readme",

@@ -1,6 +1,6 @@
 {
   "name": "@protobufs/oracle",
-  "version": "0.0.10",
+  "version": "0.1.0",
   "description": "oracle",
   "author": "Dan Lynch <pyramation@gmail.com>",
   "homepage": "https://github.com/cosmology-tech/proto-registry/tree/master/packages/oracle#readme",

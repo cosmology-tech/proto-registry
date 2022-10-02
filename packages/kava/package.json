@@ -1,6 +1,6 @@
 {
   "name": "@protobufs/kava",
-  "version": "0.0.10",
+  "version": "0.1.0",
   "description": "kava",
   "author": "Dan Lynch <pyramation@gmail.com>",
   "homepage": "https://github.com/cosmology-tech/proto-registry/tree/master/packages/kava#readme",
