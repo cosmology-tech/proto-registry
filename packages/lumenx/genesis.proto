@@ -1,0 +1,14 @@
+syntax = "proto3";
+package metaprotocolai.lumenx.lumenx;
+
+import "gogoproto/gogo.proto";
+import "lumenx/params.proto";
+// this line is used by starport scaffolding # genesis/proto/import
+
+option go_package = "github.com/metaprotocol-ai/lumenx/x/lumenx/types";
+
+// GenesisState defines the lumenx module's genesis state.
+message GenesisState {
+  Params params = 1 [(gogoproto.nullable) = false];
+  // this line is used by starport scaffolding # genesis/proto/state
+}

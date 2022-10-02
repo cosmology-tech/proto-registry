@@ -1,0 +1,11 @@
+syntax = "proto3";
+package vidulum.vidulum.vidulum;
+
+// this line is used by starport scaffolding # genesis/proto/import
+
+option go_package = "github.com/vidulum/vidulum/x/vidulum/types";
+
+// GenesisState defines the vidulum module's genesis state.
+message GenesisState {
+    // this line is used by starport scaffolding # genesis/proto/state
+}

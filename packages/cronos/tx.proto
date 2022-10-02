@@ -1,0 +1,60 @@
+syntax = "proto3";
+package cronos;
+
+// this line is used by starport scaffolding # proto/tx/import
+
+import "gogoproto/gogo.proto";
+import "cosmos/base/v1beta1/coin.proto";
+
+option go_package = "github.com/crypto-org-chain/cronos/x/cronos/types";
+
+// Msg defines the Cronos Msg service
+service Msg {
+    // this line is used by starport scaffolding # proto/tx/rpc
+
+    // ConvertVouchers defines a method for converting ibc voucher to cronos evm coins.
+    rpc ConvertVouchers(MsgConvertVouchers) returns (MsgConvertVouchersResponse);
+
+    // TransferTokens defines a method to transfer cronos evm coins to another chain through IBC
+    rpc TransferTokens(MsgTransferTokens) returns (MsgTransferTokensResponse);
+
+    // UpdateTokenMapping defines a method to update token mapping
+    rpc UpdateTokenMapping(MsgUpdateTokenMapping) returns (MsgUpdateTokenMappingResponse);
+}
+
+// MsgConvertVouchers represents a message to convert ibc voucher coins to cronos evm coins.
+message MsgConvertVouchers {
+    string address = 1;
+    repeated cosmos.base.v1beta1.Coin coins = 2
+    [(gogoproto.nullable) = false, (gogoproto.castrepeated) = "github.com/cosmos/cosmos-sdk/types.Coins"];
+}
+
+// MsgTransferTokens represents a message to transfer cronos evm coins through ibc.
+message MsgTransferTokens {
+    string from = 1;
+    string to = 2;
+    repeated cosmos.base.v1beta1.Coin coins = 3
+    [(gogoproto.nullable) = false, (gogoproto.castrepeated) = "github.com/cosmos/cosmos-sdk/types.Coins"];
+}
+
+// MsgConvertVouchersResponse defines the ConvertVouchers response type.
+message MsgConvertVouchersResponse {}
+
+// MsgTransferTokensResponse defines the TransferTokens response type.
+message MsgTransferTokensResponse {}
+
+// MsgUpdateTokenMapping defines the request type
+message MsgUpdateTokenMapping {
+    string sender = 1;
+    string denom = 2;
+    string contract = 3;
+    // only when updating cronos (source) tokens
+    string symbol = 4;
+    uint32 decimal = 5;
+}
+
+// MsgUpdateTokenMappingResponse defines the response type
+message MsgUpdateTokenMappingResponse {
+}
+
+// this line is used by starport scaffolding # proto/tx/message

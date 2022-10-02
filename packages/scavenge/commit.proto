@@ -1,0 +1,14 @@
+syntax = "proto3";
+package bze.scavenge;
+
+option go_package = "github.com/bze-alphateam/bze/x/scavenge/types";
+
+
+
+message Commit {
+  string index = 1; 
+  string solutionHash = 2; 
+  string solutionScavengerHash = 3; 
+  
+}
+

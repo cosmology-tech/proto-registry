@@ -1,0 +1,12 @@
+syntax = "proto3";
+package idep.ion.uptake;
+
+import "gogoproto/gogo.proto";
+import "uptake/nft.proto";
+
+option go_package = "github.com/idep/ion/x/uptake/types";
+
+// GenesisState defines the NFT module's genesis state
+message GenesisState {
+    repeated Collection collections = 1 [ (gogoproto.nullable) = false ];
+}

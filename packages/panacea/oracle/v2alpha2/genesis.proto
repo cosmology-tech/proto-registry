@@ -1,0 +1,67 @@
+syntax = "proto3";
+package panacea.oracle.v2alpha2;
+
+option go_package = "github.com/medibloc/panacea-core/v2/x/oracle/types";
+
+import "gogoproto/gogo.proto";
+import "google/protobuf/duration.proto";
+import "google/protobuf/timestamp.proto";
+import "panacea/oracle/v2alpha2/oracle.proto";
+
+// GenesisState defines the oracle module's genesis state.
+message GenesisState {
+  repeated Oracle oracles = 1 [(gogoproto.nullable) = false];
+  repeated OracleRegistration oracle_registrations = 2 [(gogoproto.nullable) = false];
+  repeated OracleRegistrationVote oracle_registration_votes = 3 [(gogoproto.nullable) = false];
+  Params params = 4 [(gogoproto.nullable) = false];
+  OracleUpgradeInfo oracle_upgrade_info = 5 [(gogoproto.nullable) = false];
+}
+
+// Params defines the oracle module's params.
+message Params {
+  // Oracle public key is a pair with an oracle private key which is generated in SGX by the first oracle.
+  // This key is used to encrypt data, which enables to decrypt and verify the data securely only in SGX
+  bytes oracle_public_key = 1;
+  // Anyone can validate that the oracle key pair is generated in SGX using this oracle key remote report.
+  bytes oracle_pub_key_remote_report = 2;
+  // The unique ID of current version of oracle.
+  string unique_id = 3;
+  VoteParams vote_params = 4 [(gogoproto.nullable)   = false];
+  SlashParams slash_params = 5 [(gogoproto.nullable)   = false];
+}
+
+// Vote Params defines the params related to voting.
+message VoteParams {
+  google.protobuf.Duration voting_period = 1 [
+    (gogoproto.nullable) = false,
+    (gogoproto.stdduration) = true,
+    (gogoproto.moretags) = "yaml:\"voting_period\""
+  ];
+  google.protobuf.Duration jail_period = 2 [
+    (gogoproto.nullable) = false,
+    (gogoproto.stdduration) = true,
+    (gogoproto.moretags) = "yaml:\"jail_period\""
+  ];
+  string threshold = 3 [
+    (gogoproto.customtype) = "github.com/cosmos/cosmos-sdk/types.Dec",
+    (gogoproto.nullable) = false
+  ];
+}
+
+// SlashParams defines the params related to slashing of oracle.
+message SlashParams {
+  string slash_fraction_downtime = 1 [
+    (gogoproto.customtype) = "github.com/cosmos/cosmos-sdk/types.Dec",
+    (gogoproto.nullable) = false
+  ];
+  string slash_fraction_forgery = 2 [
+    (gogoproto.customtype) = "github.com/cosmos/cosmos-sdk/types.Dec",
+    (gogoproto.nullable) = false
+  ];
+}
+
+// UpgradeOracleInfo defines the info of oracle upgrade, which includes the target height of upgrade and unique ID of the new version of oracle
+message OracleUpgradeInfo {
+  string unique_id = 1;
+  int64 height = 2;
+}

@@ -1,0 +1,22 @@
+{
+  "name": "@protobufs/em",
+  "version": "0.0.10",
+  "description": "em",
+  "author": "Dan Lynch <pyramation@gmail.com>",
+  "homepage": "https://github.com/cosmology-tech/proto-registry/tree/master/packages/em#readme",
+  "license": "SEE LICENSE IN LICENSE",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cosmology-tech/proto-registry"
+  },
+  "bugs": {
+    "url": "https://github.com/cosmology-tech/proto-registry/issues"
+  },
+  "dependencies": {
+    "@protobufs/gogoproto": "^0.0.10",
+    "@protobufs/google": "^0.0.10"
+  }
+}

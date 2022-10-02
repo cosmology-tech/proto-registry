@@ -1,0 +1,66 @@
+syntax = "proto3";
+package em.queries.v1;
+
+import "gogoproto/gogo.proto";
+import "cosmos/base/v1beta1/coin.proto";
+import "google/api/annotations.proto";
+import "google/protobuf/timestamp.proto";
+
+option go_package = "github.com/e-money/em-ledger/x/queries/types";
+
+service Query {
+  rpc Circulating(QueryCirculatingRequest) returns (QueryCirculatingResponse) {
+    option (google.api.http).get = "/e-money/bank/v1/circulating";
+  };
+
+  rpc MissedBlocks(QueryMissedBlocksRequest) returns (QueryMissedBlocksResponse) {
+    option (google.api.http).get = "/e-money/slashing/v1/missedblocks/{cons_address}";
+  };
+
+  rpc Spendable(QuerySpendableRequest) returns (QuerySpendableResponse) {
+    option (google.api.http).get = "/e-money/bank/v1/spendable/{address}";
+  };
+}
+
+message QueryCirculatingRequest {}
+
+message QueryCirculatingResponse {
+  repeated cosmos.base.v1beta1.Coin total = 1 [
+    (gogoproto.moretags) = "yaml:\"total\"",
+    (gogoproto.castrepeated) = "github.com/cosmos/cosmos-sdk/types.Coins",
+    (gogoproto.nullable) = false
+  ];
+}
+
+message QuerySpendableRequest {
+  string address = 1 [ (gogoproto.moretags) = "yaml:\"address\"" ];
+}
+
+message QuerySpendableResponse {
+  repeated cosmos.base.v1beta1.Coin balance = 1 [
+    (gogoproto.moretags) = "yaml:\"balance\"",
+    (gogoproto.castrepeated) = "github.com/cosmos/cosmos-sdk/types.Coins",
+    (gogoproto.nullable) = false
+  ];
+}
+
+message QueryMissedBlocksRequest {
+  // cons_address is the address to query the missed blocks signing info
+  string cons_address = 1;
+}
+
+message QueryMissedBlocksResponse {
+  // val_signing_info is the signing info of requested val cons address
+  MissedBlocksInfo missed_blocks_info = 1 [(gogoproto.nullable) = false];
+}
+
+// ValidatorSigningInfo defines a validator's missed blocks info.
+message MissedBlocksInfo {
+  option (gogoproto.equal)            = true;
+  option (gogoproto.goproto_stringer) = true;
+
+  string cons_address = 1;
+  // missed blocks counter (to avoid scanning the array every time)
+  int64 missed_blocks_counter = 2 [(gogoproto.moretags) = "yaml:\"missed_blocks_counter\""];
+  int64 total_blocks_counter = 3 [(gogoproto.moretags) = "yaml:\"total_blocks_counter\""];
+}

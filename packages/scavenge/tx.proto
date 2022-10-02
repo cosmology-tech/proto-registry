@@ -1,0 +1,44 @@
+syntax = "proto3";
+package bze.scavenge;
+
+// this line is used by starport scaffolding # proto/tx/import
+
+option go_package = "github.com/bze-alphateam/bze/x/scavenge/types";
+
+// Msg defines the Msg service.
+service Msg {
+      rpc SubmitScavenge(MsgSubmitScavenge) returns (MsgSubmitScavengeResponse);
+  rpc CommitSolution(MsgCommitSolution) returns (MsgCommitSolutionResponse);
+  rpc RevealSolution(MsgRevealSolution) returns (MsgRevealSolutionResponse);
+// this line is used by starport scaffolding # proto/tx/rpc
+}
+
+message MsgSubmitScavenge {
+  string creator = 1;
+  string solutionHash = 2;
+  string description = 3;
+  string reward = 4;
+}
+
+message MsgSubmitScavengeResponse {
+}
+
+message MsgCommitSolution {
+  string creator = 1;
+  string solutionHash = 2;
+  string solutionScavengerHash = 3;
+}
+
+message MsgCommitSolutionResponse {
+}
+
+message MsgRevealSolution {
+  string creator = 1;
+  string solution = 2;
+  string scavengeIndex = 3;
+}
+
+message MsgRevealSolutionResponse {
+}
+
+// this line is used by starport scaffolding # proto/tx/message

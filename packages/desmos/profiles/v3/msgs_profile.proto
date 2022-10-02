@@ -1,0 +1,54 @@
+syntax = "proto3";
+package desmos.profiles.v3;
+
+import "gogoproto/gogo.proto";
+import "google/protobuf/any.proto";
+import "cosmos_proto/cosmos.proto";
+import "desmos/profiles/v3/models_profile.proto";
+import "desmos/profiles/v3/models_dtag_requests.proto";
+
+option go_package = "github.com/desmos-labs/desmos/v4/x/profiles/types";
+
+// MsgSaveProfile represents a message to save a profile.
+message MsgSaveProfile {
+  // DTag of the profile. If it shouldn't be changed, [do-no-modify] can be used
+  // instead.
+  string dtag = 1 [
+    (gogoproto.moretags) = "yaml:\"dtag\"",
+    (gogoproto.customname) = "DTag"
+  ];
+
+  // Nickname of the profile. If it shouldn't be changed, [do-no-modify] can be
+  // used instead.
+  string nickname = 2 [ (gogoproto.moretags) = "yaml:\"nickname\"" ];
+
+  // Bio of the profile. If it shouldn't be changed, [do-no-modify] can be used
+  // instead.
+  string bio = 3 [ (gogoproto.moretags) = "yaml:\"bio\"" ];
+
+  // URL to the profile picture. If it shouldn't be changed, [do-no-modify] can
+  // be used instead.
+  string profile_picture = 4
+      [ (gogoproto.moretags) = "yaml:\"profile_picture\"" ];
+
+  // URL to the profile cover. If it shouldn't be changed, [do-no-modify] can be
+  // used instead.
+  string cover_picture = 5 [ (gogoproto.moretags) = "yaml:\"cover_picture\"" ];
+
+  // Address of the user associated to the profile
+  string creator = 6 [ (gogoproto.moretags) = "yaml:\"creator\"" ];
+}
+
+// MsgSaveProfileResponse defines the Msg/SaveProfile response type.
+message MsgSaveProfileResponse {}
+
+// --------------------------------------------------------------------------------------------------------------------
+
+// MsgDeleteProfile represents the message used to delete an existing profile.
+message MsgDeleteProfile {
+  // Address associated to the profile to be deleted
+  string creator = 1 [ (gogoproto.moretags) = "yaml:\"creator\"" ];
+}
+
+// MsgDeleteProfileResponse defines the Msg/DeleteProfile response type.
+message MsgDeleteProfileResponse {}
