@@ -1,9 +1,9 @@
 {
-  "name": "@protobufs/vidilum",
+  "name": "@protobufs/vidulum",
   "version": "0.1.0",
-  "description": "vidilum",
+  "description": "vidulum",
   "author": "Dan Lynch <pyramation@gmail.com>",
-  "homepage": "https://github.com/cosmology-tech/proto-registry/tree/master/packages/vidilum#readme",
+  "homepage": "https://github.com/cosmology-tech/proto-registry/tree/master/packages/vidulum#readme",
   "license": "SEE LICENSE IN LICENSE",
   "publishConfig": {
     "access": "public"
