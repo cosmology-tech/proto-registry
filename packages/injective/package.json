@@ -1,6 +1,6 @@
 {
   "name": "@protobufs/injective",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "injective",
   "author": "Dan Lynch <pyramation@gmail.com>",
   "homepage": "https://github.com/cosmology-tech/proto-registry/tree/master/packages/injective#readme",

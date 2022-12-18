@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.0.12](https://github.com/cosmology-tech/proto-registry/compare/@protobufs/ibc@0.0.11...@protobufs/ibc@0.0.12) (2022-12-18)
+
+**Note:** Version bump only for package @protobufs/ibc
+
+
+
+
+
 ## [0.0.11](https://github.com/cosmology-tech/proto-registry/compare/@protobufs/ibc@0.0.10...@protobufs/ibc@0.0.11) (2022-08-07)
 
 **Note:** Version bump only for package @protobufs/ibc
