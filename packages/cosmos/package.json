@@ -18,6 +18,7 @@
   "dependencies": {
     "@protobufs/cosmos_proto": "^0.0.10",
     "@protobufs/gogoproto": "^0.0.10",
+    "@protobufs/amino": "^0.0.11",
     "@protobufs/google": "^0.0.10",
     "@protobufs/tendermint": "^0.0.10"
   }
