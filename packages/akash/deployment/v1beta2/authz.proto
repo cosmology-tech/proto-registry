@@ -10,7 +10,7 @@ option go_package = "github.com/ovrclk/akash/x/deployment/types/v1beta2";
 // DepositDeploymentAuthorization allows the grantee to deposit up to spend_limit coins from
 // the granter's account for a deployment.
 message DepositDeploymentAuthorization {
-  option (cosmos_proto.implements_interface) = "Authorization";
+  option (cosmos_proto.implements_interface) = "cosmos.authz.Authorization";
 
   // SpendLimit is the amount the grantee is authorized to spend from the granter's account for
   // the purpose of deployment.
