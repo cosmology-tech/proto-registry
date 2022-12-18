@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.1.0](https://github.com/cosmology-tech/proto-registry/compare/@protobufs/akash@0.0.9...@protobufs/akash@0.1.0) (2022-12-18)
+
+**Note:** Version bump only for package @protobufs/akash
+
+
+
+
+
 ## [0.0.9](https://github.com/cosmology-tech/proto-registry/compare/@protobufs/akash@0.0.8...@protobufs/akash@0.0.9) (2022-12-18)
 
 **Note:** Version bump only for package @protobufs/akash

@@ -1,6 +1,6 @@
 {
   "name": "@protobufs/axelar",
-  "version": "0.0.15",
+  "version": "0.1.0",
   "description": "axelar",
   "author": "Dan Lynch <pyramation@gmail.com>",
   "homepage": "https://github.com/cosmology-tech/proto-registry/tree/master/packages/axelar#readme",
@@ -16,7 +16,7 @@
     "url": "https://github.com/cosmology-tech/proto-registry/issues"
   },
   "dependencies": {
-    "@protobufs/cosmos": "^0.0.12",
+    "@protobufs/cosmos": "^0.1.0",
     "@protobufs/gogoproto": "^0.0.10",
     "@protobufs/google": "^0.0.10"
   }

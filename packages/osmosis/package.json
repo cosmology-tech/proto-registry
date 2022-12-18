@@ -1,6 +1,6 @@
 {
   "name": "@protobufs/osmosis",
-  "version": "0.3.1",
+  "version": "0.4.0",
   "description": "osmosis",
   "author": "Dan Lynch <pyramation@gmail.com>",
   "homepage": "https://github.com/cosmology-tech/proto-registry/tree/master/packages/osmosis#readme",
@@ -16,9 +16,9 @@
     "url": "https://github.com/cosmology-tech/proto-registry/issues"
   },
   "dependencies": {
-    "@protobufs/cosmos": "^0.0.12",
-    "@protobufs/gogoproto": "^0.0.10",
     "@protobufs/amino": "^0.0.11",
+    "@protobufs/cosmos": "^0.1.0",
+    "@protobufs/gogoproto": "^0.0.10",
     "@protobufs/google": "^0.0.10"
   }
 }

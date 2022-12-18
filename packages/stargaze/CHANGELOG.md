@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.1.0](https://github.com/cosmology-tech/proto-registry/compare/@protobufs/stargaze@0.0.13...@protobufs/stargaze@0.1.0) (2022-12-18)
+
+**Note:** Version bump only for package @protobufs/stargaze
+
+
+
+
+
 ## [0.0.13](https://github.com/cosmology-tech/proto-registry/compare/@protobufs/stargaze@0.0.12...@protobufs/stargaze@0.0.13) (2022-12-18)
 
 **Note:** Version bump only for package @protobufs/stargaze
